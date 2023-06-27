@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const StopwatchWidget = () => {
+const MyCustomWidget2 = () => {
   const [isRunning, setIsRunning] = useState(false);
   const [elapsedTime, setElapsedTime] = useState(0);
   const intervalRef = useRef(null);
@@ -43,4 +43,4 @@ const StopwatchWidget = () => {
   );
 };
 
-export default StopwatchWidget;
+export default MyCustomWidget2;

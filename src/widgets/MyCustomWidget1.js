@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const WeatherWidget = () => {
+const MyCustomWidget1 = () => {
   const [weatherData, setWeatherData] = useState(null);
   const API_KEY = '7c50d6127c6ecbee83c5a0a0ef1be3c2'; // Replace with your actual API key
   const location = 'Mumbai'; // Replace with the desired location
@@ -38,4 +38,4 @@ const WeatherWidget = () => {
   );
 };
 
-export default WeatherWidget;
+export default MyCustomWidget1;

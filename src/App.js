@@ -5,16 +5,16 @@ import WidgetGalleryModal from './modals/WidgetGalleryModal';
 import Draggable from 'react-draggable';
 import TimerWidget from './widgets/TimerWidget';
 import CalendarWidget from './widgets/CalendarWidget';
-import WeatherWidget from './widgets/WeatherWidget'; // Import the WeatherWidget component
-import StopwatchWidget from './widgets/StopwatchWidget'; // Import the WeatherWidget component
+import MyCustomWidget1 from './widgets/MyCustomWidget1'; // Import the WeatherWidget component
+import MyCustomWidget2 from './widgets/MyCustomWidget2'; // Import the StopwatchWidget component
  
 function App() {
  const [widgets, setWidgets] = useState([
   { id: new Date().getTime(), component: <ClockWidget />, area: 'main-widget', name: "Date and Time" },
   { id: new Date().getTime() + 2, component: <CalendarWidget />, area: 'right-widget', name: "Calendar" },
   { id: new Date().getTime() + 1, component: <TimerWidget />, area: 'left-widget', name:"Timer" },
-  { id: new Date().getTime() + 3, component: <WeatherWidget />, area: 'main-widget', name: "Weather" }, // Include the WeatherWidget in the widgets array
-  { id: new Date().getTime() + 3, component: <StopwatchWidget />, area: 'left-widget', name: "Stopwatch" },
+  { id: new Date().getTime() + 3, component: <MyCustomWidget1 />, area: 'main-widget', name: "Weather" }, // Include the WeatherWidget in the widgets array
+  { id: new Date().getTime() + 3, component: <MyCustomWidget2 />, area: 'left-widget', name: "Stopwatch" },
 
  ])
  const [showWidgetModal, setShowWidgetModal] = useState(false)
